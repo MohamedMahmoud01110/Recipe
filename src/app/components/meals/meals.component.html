@@ -1,0 +1,10 @@
+<section class="p-4 min-h-screen">
+  <app-meals-header
+    (category)="mealsCategory = $event"
+    (regionBoolean)="regionBoolean = $event"
+  ></app-meals-header>
+  <app-meals-body
+    [meals]="mealsCategory"
+    [regionBoolean]="regionBoolean"
+  ></app-meals-body>
+</section>

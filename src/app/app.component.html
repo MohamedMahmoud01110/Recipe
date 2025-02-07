@@ -1,0 +1,20 @@
+<main class="bg-bg">
+  <app-sidebar-button
+    (isSidebarOpen)="isSidebarOpen = $event"
+  ></app-sidebar-button>
+  <app-sidebar
+    class="fixed top-0 left-0 bottom-0 w-64 z-45 xl:translate-x-0 transition-all duration-500"
+    [class.-translate-x-full]="!isSidebarOpen"
+  >
+  </app-sidebar>
+  <app-black-bg
+    [class.hidden]="!isSidebarOpen"
+    (isSidebarOpen)="isSidebarOpen = $event"
+  ></app-black-bg>
+  <div class="xl:ml-64 relative">
+    <router-outlet></router-outlet>
+    <app-footer
+      class="absolute top-full right-0 left-0 xl:-left-64 xl:z-50"
+    ></app-footer>
+  </div>
+</main>

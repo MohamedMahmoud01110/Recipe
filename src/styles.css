@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@theme {
+  --color-bg: #f4f2ee;
+  --font-pacifico: "Pacifico";
+  --font-cursive: "Cursive", cursive;
+}

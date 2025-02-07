@@ -1,0 +1,10 @@
+<div
+  class="pt-15 pb-8 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-3 2xl:grid-cols-4 gap-x-6 md:gap-y-18 gap-y-25"
+>
+  @for (meal of meals; track $index) {
+  <app-meals-card
+    [meal]="meal"
+    [regionBoolean]="regionBoolean"
+  ></app-meals-card>
+  }
+</div>
